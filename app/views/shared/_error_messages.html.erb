@@ -1,0 +1,15 @@
+
+<% if  @quote.errors.any? %>
+  <p>The form contains <%= pluralize(@quote.errors.count, "error") %>
+
+  <ul>
+    <% @quote.errors.full_message.each do |msg| %>
+      <li> <%= msg %> </li>
+    <% end %>
+
+  </ul>
+
+<% end %>
+
+
+
