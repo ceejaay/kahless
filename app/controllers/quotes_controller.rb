@@ -17,6 +17,7 @@ class QuotesController < ApplicationController
   def create
     @quote = Quote.new(params[:quote])
     @quote.save
-    redirect_to root_path
+       redirect_to root_path,  notice: "Your quote will be reviewed by the great Kahless"
+     
   end
 end
