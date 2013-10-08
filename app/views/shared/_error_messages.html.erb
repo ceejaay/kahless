@@ -1,9 +1,9 @@
 
-<% if  @quote.errors.any? %>
-  <p>The form contains <%= pluralize(@quote.errors.count, "error") %>
+<% if  object.errors.any? %>
+  <p>The form contains <%= pluralize(object.errors.count, "error") %>
 
   <ul>
-    <% @quote.errors.full_message.each do |msg| %>
+    <% object.errors.full_message.each do |msg| %>
       <li> <%= msg %> </li>
     <% end %>
 
