@@ -1,6 +1,6 @@
 Kahless::Application.routes.draw do
 
-  root :to => 'quotes#show'
+  root :to => 'quotes#index'
   match "/new" => "quotes#new"
   resources :quotes, only: [:show, :index, :new, :create]
 

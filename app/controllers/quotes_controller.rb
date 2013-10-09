@@ -1,11 +1,12 @@
 class QuotesController < ApplicationController
 
   def show
-    @quote = Quote.where(authorized: true).all.sample
+
   end
 
 
   def index
+    @quote = Quote.where(authorized: true).all.sample
   end
 
 

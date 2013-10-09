@@ -1,7 +1,7 @@
 <h1>Add your own wisdom</h1>
 
 <%= form_for @quote do |f| %>
-<%= render "shared/error_messages", object: @quote %>
+  <%= render "shared/error_messages", object: @quote %> 
   <div class="container">
     <%= f.text_area :text %></br>
     <%= f.submit %>

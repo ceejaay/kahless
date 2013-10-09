@@ -2,13 +2,13 @@
 <% if  @quote.errors.any? %>
   <p>The form contains <%= pluralize(@quote.errors.count, "error") %>
 
-  <ul>
-    <% @quote.errors.full_messages.each do |msg| %>
-      <li> <%= msg %> </li>
-    <% end %>
-
-  </ul>
-
+  <div class="errorsExplanation">
+    <ul>
+      <% @quote.errors.full_messages.each do |msg| %>
+        <li> <%= msg %> </li>
+      <% end %>
+    </ul>
+  </div>
 <% end %>
 
 
