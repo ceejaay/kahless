@@ -1,22 +1,9 @@
 <h1>Add your own wisdom</h1>
 
 <%= form_for @quote do |f| %>
-  <div class="container" >
-  <% if @quote.errors.any? %>
-    <div id="errorsExplanation">
-      <h2><% pluralize(@quote.errors.count, "error") %>
-    prohibited this quote from being saved:</h2>
-      <ul>
-        <% @quote.errors.full_message.each do |msg| %>
-        <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-
-  <% end %>
-</div>
-<div class="container">
-  <%= f.text_area :text %></br>
-  <%= f.submit %>
-  <% end %>
-</div>
+  <%= render "shared/error_messages", object: @quote %> 
+  <div class="container">
+    <%= f.text_area :text %></br>
+    <%= f.submit %>
+    <% end %>
+  </div>
