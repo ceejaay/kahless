@@ -2,7 +2,7 @@ Kahless::Application.routes.draw do
 
   root :to => 'quotes#index'
   match "/new" => "quotes#new"
-  resources :quotes, only: [:show, :index, :new, :create]
+  resources :quotes, only: [ :index, :new, :create]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
