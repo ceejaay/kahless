@@ -1,8 +1,7 @@
-  <div id="errorsExplanation">
 <% if  @quote.errors.any? %>
+  <div id="errorsExplanation">
   <p>The form contains <%= pluralize(@quote.errors.count, "error") %>
 
-  
     <ul>
       <% @quote.errors.full_messages.each do |msg| %>
         <li> <%= msg %> </li>
