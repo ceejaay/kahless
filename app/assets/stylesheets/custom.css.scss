@@ -2,29 +2,43 @@
 @import "bootstrap";
 
 body {
+  background: #383048;
   margin-top: 50px;
   }
+
+ h1 {
+   color: white;
+   }
 
 footer {
 	margin-top: 45px;
 	padding-top: 5px;
 	border-top: 1px solid black;
+  
 	}
 
 footer a {
-	color: #555;
+	color: white;
   margin: 25px;
-	}
+  }
 
 #errorsExplanation {
 		width: 300px;
     border: solid red 5px;
   		}
 
+#errorsExplanation ul {
+ color: white;
+  
+}
+#errorsExplanation p {
+ color: white;
+  
+}
  .container {
    }
 
-
+/* styling for the front page */
   .span3 {
     background-image: url('kahless.gif');
     border: 7px solid black;
@@ -36,13 +50,19 @@ footer a {
    
    .span5 {
      background-image: url('background.jpg');
+     color: black;
      margin: 5px;
      width: 600px;
+     height: 175px;
      border-radius: 9px;
      margin-top: 75px;
      padding: 50px;
      }
-   
+
+   .span5 h1 {
+     color: black;
+     }   
+
    .row {
      margin: 20px;
      margin-top: 70px;
