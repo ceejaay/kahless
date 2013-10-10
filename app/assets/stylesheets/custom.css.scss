@@ -2,7 +2,7 @@
 @import "bootstrap";
 
  body {
-  background: gray;
+  background: rgba (61, 62, 77, 0.95);
   }
 
 footer {
@@ -12,7 +12,8 @@ footer {
 	}
 
 footer a {
-	color: #555
+	color: #555;
+  margin: 25px;
 	}
 
 #errorsExplanation {
@@ -21,7 +22,6 @@ footer a {
   		}
 
  .container {
-   border: solid black 2px;
    }
  
  .quote-box {
@@ -59,8 +59,8 @@ footer a {
 
   .span3 {
     background-image: url('kahless.gif');
-    border: 2px solid black;
-    border-radius: 3px;
+    border: 7px solid black;
+    border-radius: 5px;
     height: 426px;
     width: 320px;
     margin: 5px;
@@ -69,10 +69,14 @@ footer a {
    .span5 {
      background-image: url('background.jpg');
      margin: 5px;
-     border: dotted brown 3px;
+     width: 600px;
+     border-radius: 9px;
+     margin-top: 100px;
+     padding: 50px;
      }
-
+   
    .row {
      border: 2px solid black;
      margin: 20px;
+     width: 75%;
      }
