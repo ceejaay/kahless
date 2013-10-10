@@ -1,6 +1,9 @@
 
 @import "bootstrap";
 
+ body {
+  background: gray;
+  }
 
 footer {
 	margin-top: 45px;
@@ -20,3 +23,56 @@ footer a {
  .container {
    border: solid black 2px;
    }
+ 
+ .quote-box {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+    border: black solid 5px;
+    float: right;
+    margin: 20px;
+
+   }
+
+   .quote-box p {
+      font-size: 38px;
+      padding: 100px;
+
+     }
+  .big-box {
+    width: 50%;
+    height: 100%;
+    border: solid black 3px;
+    }
+
+
+  .image-box {
+    height: 426;
+    float: left;
+    width: 320;
+    }
+
+  .image-box img {
+    
+    }
+
+
+  .span3 {
+    background-image: url('kahless.gif');
+    border: 2px solid black;
+    border-radius: 3px;
+    height: 426px;
+    width: 320px;
+    margin: 5px;
+    }
+   
+   .span5 {
+     background-image: url('background.jpg');
+     margin: 5px;
+     border: dotted brown 3px;
+     }
+
+   .row {
+     border: 2px solid black;
+     margin: 20px;
+     }
