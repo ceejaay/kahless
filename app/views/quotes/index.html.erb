@@ -1,10 +1,15 @@
-<div class="row">
+<div class="container">
   <div class="span3"></div>
-    <div class="span5">
-      <h1><%= @quote.text  %></h1>
-    </div>
-  <div class="row">
-  <%= button_to "More Wisdom", root_path, class: "btn btn-large btn-primary"  %></br>
+  <div class="span5">
+   <h1><%= @quote.text %></h1>
+  </div>
+
+
+  <div class="container">
+    <center>
+  <%= button_to "More Wisdom", root_path, class: "btn btn-large btn-primary"  %>
+    </center>
+
   </div>
 </div>
 
