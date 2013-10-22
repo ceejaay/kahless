@@ -1,7 +1,11 @@
 Kahless::Application.routes.draw do
+  
 
+  devise_for :admins
+  
   root :to => 'quotes#index'
   match "/new" => "quotes#new"
+  get  "/admin_page" => "quotes#admin_page"
   resources :quotes, only: [ :index, :new, :create]
 
   # The priority is based upon order of creation:

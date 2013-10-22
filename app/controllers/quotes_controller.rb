@@ -24,4 +24,9 @@ class QuotesController < ApplicationController
       # redirect_to new_path, notice: "Please address the problems below."
    end  
   end
+  
+  def admin_page
+  
+  end
+
 end

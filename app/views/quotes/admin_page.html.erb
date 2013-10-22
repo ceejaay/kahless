@@ -1,0 +1,8 @@
+
+<% unless admin_signed_in? %>
+<h1>Admin Only Page<h1>
+
+<% else %>
+
+  <%= link_to "Sign out", destroy_admin_session_path, method: :delete %>
+<% end %>
