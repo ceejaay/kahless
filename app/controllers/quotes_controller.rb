@@ -26,7 +26,15 @@ class QuotesController < ApplicationController
   end
   
   def admin_page
-  
+    @quote = Quote.where(authorized: false)
   end
+
+  def update
+    @quote = Quote.find(params[:id])
+    @quote.authorized = true
+    @quote.save
+    redirect_to admin_page_path
+  end
+
 
 end

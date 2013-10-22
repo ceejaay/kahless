@@ -3,6 +3,16 @@
 <h1>Admin Only Page<h1>
 
 <% else %>
-
-  <%= link_to "Sign out", destroy_admin_session_path, method: :delete %>
+<div class="container">
+  <%= link_to "Sign out", destroy_admin_session_path, method: :delete, class: "btn btn-primary" %></br>
+    <% @quote.each do |q| %>
+  <table class="table table-striped">
+     <tr>
+       <td><%=q.text %></td>
+       <td><%= q.authorized %></td>
+       <td><%= link_to "Authorize", quote_path(q), method: :put, class: "btn" %></td>
+     </tr>
+  </table>
+  <% end %>
+</div>
 <% end %>
