@@ -47,7 +47,8 @@ footer p {
 
 /* styling for the front page */
   .span3 {
-    background-image: url('46656.jpg');
+   /*  background-image: url('46656.jpg'); */
+
     background-repeat: no-repeat;
     background-position: center;
     border: 7px solid black;
@@ -56,6 +57,10 @@ footer p {
     width: 320px;
     margin: 5px;
     }
+
+    .span3 img {
+      
+      }
    
    .span5 {
      background-image: url('background.jpg');
