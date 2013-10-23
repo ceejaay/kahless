@@ -2,7 +2,6 @@ Kahless::Application.routes.draw do
   
 
   devise_for :admins
-  put "authorize" => "quotes#authorize" 
   root :to => 'quotes#index'
   match "/new" => "quotes#new"
   get  "/admin_page" => "quotes#admin_page"
