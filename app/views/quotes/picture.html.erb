@@ -1,6 +1,6 @@
 <div class="container">
   <h3>This drawing was made by my cousin, Carl Jemmett. He's an illustrator and animator with a background in IT.
   You can e-mail him at carlton.jemmett [at] gmail dot com.
-  Or check out some of his work <%= link_to " here", "http://cactuscarlton.deviantart.com/" %>.</h3>
+  Or<%= link_to " check out his work on Deviant Art.", "http://cactuscarlton.deviantart.com/" %>.</h3>
 </div>
-<%= image_tag("kahless3.jpg") %>
+<%= link_to(image_tag("kahless3.jpg", title: "Carl Jemmett"), "http://cactuscarlton.deviantart.com") %>
