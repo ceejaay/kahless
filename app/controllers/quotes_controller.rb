@@ -35,6 +35,9 @@ class QuotesController < ApplicationController
     @quote.save
     redirect_to admin_page_path
   end
-
+  
+  def picture
+    
+  end
 
 end
