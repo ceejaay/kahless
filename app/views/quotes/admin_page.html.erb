@@ -11,6 +11,7 @@
        <td><%=q.text %></td>
        <td><%= q.authorized %></td>
        <td><%= link_to "Authorize", quote_path(q), method: :put, class: "btn" %></td>
+       <td><%= link_to "Delete", q,  method: :delete, data: {confirm: "Are you sure?"}, class: "btn" %>
      </tr>
   </table>
   <% end %>

@@ -39,5 +39,12 @@ class QuotesController < ApplicationController
   def picture
     
   end
+  
+  def destroy
+    @quote = Quote.find(params[:id])
+    @quote.destroy
+    redirect_to admin_page_path
+  end
+
 
 end
