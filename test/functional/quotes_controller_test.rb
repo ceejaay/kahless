@@ -62,6 +62,7 @@ class QuotesControllerTest < ActionController::TestCase
 #this needs the login helper. How to do this with devise?
   test "should get admin page" do
     get :admin_page
+#this part is failiing.
     assert_response :success
   end
   
