@@ -7,6 +7,7 @@ Kahless::Application.routes.draw do
   get  "/admin_page" => "quotes#admin_page"
   resources :quotes, only: [ :index, :new, :create, :update, :destroy]
   match "/picture" => "quotes#picture"
+  get "/test_page" => "quotes#test_page"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -45,6 +45,9 @@ class QuotesController < ApplicationController
     @quote.destroy
     redirect_to admin_page_path
   end
+  
+  def test_page
 
+  end
 
 end
