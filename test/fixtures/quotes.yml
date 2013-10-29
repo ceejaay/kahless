@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  text: MyString
-  authorized: false
+kahless_quote:
+ text: text long enough to validate.
+ authorized: false
 
-two:
-  text: MyString
-  authorized: false
+too_long:
+ text: this text is way too long it has to be less than 140 characters so there is no way that this will work and I think this is too long blah blah blah blha blha blha blha blha blah there is more text here and I think this is too long.
+ authorized: false
